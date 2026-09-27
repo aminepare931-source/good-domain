@@ -6,11 +6,16 @@ Comparateur de noms de domaine et d'hébergeurs 100% affiliation, ciblant l'Afri
 - Next.js (Vercel)
 - Base de données légère pour : logs de recherche, clics affiliés (subid), historique quotidien des prix des extensions
 
-## Maquettes
+## Structure du dépôt
 
-Les maquettes UI générées avec Google Stitch se trouvent dans `/mockups`.
+- `/app` — Le projet Next.js réel (App Router + TypeScript + Tailwind v4), avec les 4 écrans convertis en composants React : Accueil/Recherche, Comparateur, Scan Performance Pays, Statistiques & Transparence. Voir `app/README.md` pour le détail et ce qui reste à brancher (API registrars, logs, cron des prix).
+- `/mockups` — Maquettes HTML brutes générées avec Google Stitch, gardées comme référence visuelle.
+  - `statistiques-transparence.html` + capture d'écran associée
 
-- `statistiques-transparence.html` — Page "Statistiques des Prix & Observatoire de Transparence" (HTML statique + Tailwind CDN, à convertir en composants Next.js)
-- `statistiques-transparence-screenshot.png` — Capture d'écran de référence
+## Démarrer en local
 
-D'autres écrans (Accueil/Recherche, Comparateur, Scan Performance Pays) restent à générer et ajouter ici au fur et à mesure.
+```bash
+cd app
+npm install
+npm run dev
+```

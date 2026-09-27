@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  /* Design tokens repris de la maquette Stitch (DomainCompare Afrique) */
+  --color-primary: #00288e;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1e40af;
+  --color-on-primary-container: #a8b8ff;
+
+  --color-secondary: #565e74;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #dae2fd;
+  --color-on-secondary-container: #5c647a;
+
+  --color-tertiary: #003d27;
+  --color-tertiary-container: #00563a;
+  --color-on-tertiary-container: #3fd298;
+  --color-tertiary-fixed-dim: #4edea3;
+
+  --color-surface: #f8f9ff;
+  --color-surface-dim: #cbdbf5;
+  --color-surface-bright: #f8f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e5eeff;
+  --color-surface-container-high: #dce9ff;
+  --color-surface-container-highest: #d3e4fe;
+  --color-surface-variant: #d3e4fe;
+
+  --color-on-surface: #0b1c30;
+  --color-on-surface-variant: #444653;
+  --color-on-background: #0b1c30;
+  --color-background: #f8f9ff;
+
+  --color-outline: #757684;
+  --color-outline-variant: #c4c5d5;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --color-inverse-surface: #213145;
+  --color-inverse-on-surface: #eaf1ff;
+  --color-inverse-primary: #b8c4ff;
+
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-on-surface);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
